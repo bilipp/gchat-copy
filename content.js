@@ -134,7 +134,7 @@ function main() {
                         const el = document.createElement('textarea');
                         const roomId = window.location.pathname.match(/\/room\/([^\?\/]*)/)[1];
                         const threadId = e.getAttribute("data-topic-id");
-                        el.value = `https://chat.google.com/room/${roomId}/${threadId}`;
+                        el.value = `https://chat.google.com/u/1/room/${roomId}/${threadId}`;
                         document.body.appendChild(el);
                         el.select();
                         document.execCommand('copy');
